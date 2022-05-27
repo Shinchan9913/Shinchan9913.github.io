@@ -1,0 +1,44 @@
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 100px;
+}
+
+#logo{
+  max-height: 40px;
+}
+
+.middle-section{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  flex-direction: row;
+  color: #1d1d20;
+  position: relative;
+}
+
+.middle-section .options{
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+.middle-section .options:hover{
+  color: #ff218c;
+}
+
+.middle-section .options:after{
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: red;
+  transition: .3s;
+  bottom: 0;
+}
+
+.middle-section .options:hover:after{
+  width: 100%;
+}
